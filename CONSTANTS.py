@@ -2,5 +2,5 @@ SIMPLE_CONNECTIVES = ['कि', 'और', 'एवं', 'इसलिए', 'क�
                       'नहीं तो']
 # removed para for now from simple connectives
 COMPLEX_CONNECTIVES = []
-INPUT_FILE = "/Users/fatema/Desktop/workspace/LanguageCommunicator/pythonProject1/Sentence_Simplification/input.txt"
-OUTPUT_FILE = "/Users/fatema/Desktop/workspace/LanguageCommunicator/pythonProject1/Sentence_Simplification/output.txt"
+INPUT_FILE = "input.txt"
+OUTPUT_FILE = "output.txt"
