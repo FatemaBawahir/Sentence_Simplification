@@ -1,0 +1,47 @@
+CONSTANTS - list of connectives
+INPUT_FILE = ""
+
+Assumptions -
+input file has unique sentence id
+input file has - sentence_id - tab separated - sentence
+input file can have many sentences
+
+def read_input(file_path):
+    read the tab separated file
+    create dict
+        key - sentence_id
+        value - sentence
+    return dict
+
+
+def validate_sentence(sentence):
+    sentence not empty
+    sentence does not contain only numbers
+
+    return True or False
+
+def generate_simple_sentence(key, value):
+
+    tokens = value.split(' ')
+
+    for token in tokens:
+        if token in list_of_connectives:
+            we append the current sent. in list of sub-sent
+        else:
+            we keep adding token to current sent.
+    return list of sub-sentences
+
+
+if __name__ == '__main__':
+    input_data = read_input(INPUT_FILE)
+
+    for key, value in input_data:
+
+        if validate_sentence(value):
+            sub_sentences = generate_simple_sentence(key, value)
+        else:
+            sub_sentences = [Error]
+
+        output_sentences[key] = sub_sentences
+
+
